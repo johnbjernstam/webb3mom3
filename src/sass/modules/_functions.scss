@@ -1,0 +1,15 @@
+@function set-text-color($bg-color) {
+    @if(lightness($bg-color) > 50) {
+        @return #000000;
+    } @else {
+        @return #ffffff;
+    }
+}
+
+@mixin tablet()
+{
+    @media(max-width: #{$tablet})
+    {
+        @content;
+    }
+}

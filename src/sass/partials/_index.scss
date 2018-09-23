@@ -1,0 +1,36 @@
+.header
+{
+    background-color: $secondColor;
+    h1
+    {
+        padding: 15px;
+        color: lighten($secondColor, 50%);
+        text-shadow: 0 5px darken($firstColor, 25%);
+
+        @include tablet
+        {
+            color: $fourthColor;
+            text-align: center;
+        }
+    }
+}
+
+.sec
+    {
+    padding: 10px 0;
+    }
+
+#section1
+    {
+        @extend .sec;
+        background-color: $sixthColor;
+        color: set-text-color($sixthColor);
+        
+    }
+    
+#section2
+    {
+        @extend .sec;
+        background-color: $seventhColor;
+        color: set-text-color($seventhColor);
+    }
